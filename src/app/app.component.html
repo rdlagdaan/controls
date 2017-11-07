@@ -1,20 +1,400 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="parent" >
+	<input id="btnOpen" style="height: 30px" type="button" ej-button class="ejinputtext" value="Click to open Dialog" (click)="onClick($event)" *ngIf="btndisplay"/>
+	<ej-dialog id="basicDialog" #dialog title="Facebook" [(enableResize)]="resize" containment="#parent" (close)="onClose($event)">
+		Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+		4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin
+		Moskovitz and Chris Hughes. The founders had initially limited the website's membership to Harvard students, but later
+		expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students
+		at various other universities and later to high-school students.
+	</ej-dialog>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<ej-accordion>
+  <h3>
+      <a href="#">Twitter</a>
+  </h3>
+  <div>
+      Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".
+      Registered users can read and post tweets, but those who are unregistered can only read them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San Francisco and has more than 25 offices around the world.
+      Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion search queries per day.
+  </div>
+  <h3>
+      <a href="#">Facebook</a>
+  </h3>
+  <div>
+      Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
+  </div>
+  <h3>
+      <a href="#">WhatsApp</a>
+  </h3>
+  <div>
+      WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+      As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
+      WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
+  </div>
+</ej-accordion>
+
+<ej-accordion id="multiAccordion" enableMultipleOpen="true">
+  <h3>
+      <a href="#">Twitter</a>
+  </h3>
+  <div>
+      Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".
+      Registered users can read and post tweets, but those who are unregistered can only read them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San Francisco and has more than 25 offices around the world.
+      Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion search queries per day.
+  </div>
+  <h3>
+      <a href="#">Facebook</a>
+  </h3>
+  <div>
+      Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
+  </div>
+  <h3>
+      <a href="#">WhatsApp</a>
+  </h3>
+  <div>
+      WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+      As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
+      WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
+  </div>
+</ej-accordion>
+
+<ej-accordion id="iconAccordion" customIcon.header="header-close" customIcon.selectedHeader="header-expand">
+  <h3>
+  <div class="logos volkswagan"></div>
+                          <a href="#">Volkswagen</a>
+                      </h3>
+                      <div>
+                          Volkswagen is a German automobile manufacturer headquartered in Wolfsburg, Lower Saxony, Germany.
+                          Volkswagen is the original and top-selling marquee of the Volkswagen Group, the biggest German automaker and the third largest automaker in the world.
+                      </div>
+                      <h3>
+                          <div class="logos mitsubishi"></div>
+                          <a href="#">Mitsubishi</a>
+                      </h3>
+                      <div>
+                          The Mitsubishi Group is a group of autonomous Japanese multinational companies covering a range of businesses which share the Mitsubishi brand,
+                          trademark, and legacy.The Mitsubishi group of companies form a loose entity, the Mitsubishi Keiretsu, which is often referenced in Japanese and US media and official reports.
+                      </div>
+                      <h3>
+                          <div class="logos benz"></div>
+                          <a href="#">Mercedes-Benz</a>
+                      </h3>
+                      <div>
+                          Mercedes-Benz is a multinational division of the German manufacturer Daimler AG, and the brand is used for luxury automobiles, buses, coaches, and trucks.
+                          Mercedes-Benz is headquartered in Stuttgart, Baden-Württemberg, Germany.The name first appeared in 1926 under Daimler-Benz but traces its origins
+                          to Daimler-Motormen-Gesell shaft's 1901 Mercedes and to Karl Benz's 1886 Benz Patent Motorwagen, which is widely regarded as the first automobile.
+                      </div>
+  </ej-accordion>
+
+
+  <ej-accordion id="nestedAccordion" class="control_frame">
+    <h3>
+        <a href="#">Pizza Menu</a>
+    </h3>
+    <div>
+        That is the reason why we offer a variety of toppings and crusts and a wide array of choices made from natural ingredients, balancing a nutritional diet with splendid taste.
+        <ej-accordion id="pizzaMenu" style="width: 460px; margin-top: 15px">
+            <h3>
+                <a href="#">GARDEN FRESH (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/garden-veggie.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $50
+                    <br />
+                    Ingredients : cheese, onions, green capsicums & tomatoes.
+                </div>
+            </div>
+            <h3>
+                <a href="#">CORN & SPINACH (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/corn-and-spinach-05.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $70
+                    <br />
+                    Ingredients : cheese, sweet corn & green capsicums.
+                </div>
+            </div>
+            <h3>
+                <a href="#">CHICKEN DELITE (Non-veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/chicken-delite.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $100
+                    <br />
+                    Ingredients : cheese, chicken chunks, onions & pineapple chunks.
+                </div>
+            </div>
+            <h3>
+                <a href="#">KEEMA LA JAWAB (Non-veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/chicken-delite.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $95
+                    <br />
+                    Ingredients : lamb keema, onions, garlic & tandoori seasoning.
+                </div>
+            </div>
+        </ej-accordion>
+    </div>
+    <h3>
+        <a href="#">Pasta Menu</a>
+    </h3>
+    <div>
+        Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
+        <ej-accordion id="pastaMenu" style="width: 460px; margin-top: 15px">
+            <h3>
+                <a href="#">ZESTY MUSHROOMS AND TOMATO  (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/zesty-mushroons-and-tomatoes.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $30
+                    <br />
+                    Ingredients : cheese, onions, green capsicums & tomatoes.
+                </div>
+            </div>
+            <h3>
+                <a href="#">CORN & SPINACH (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/corn-and-spinach-05.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $35
+                    <br />
+                    Ingredients : sautered spinach mix, sweet corn, parsley & mozarella cheese.
+                </div>
+            </div>
+            <h3>
+                <a href="#">BAKED CHICKEN AND CHEESE (Non-veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/baked-chicken-and-cheese.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $55
+                    <br />
+                    Ingredients : grilled chicken, corn and olives.
+                </div>
+            </div>
+        </ej-accordion>
+    </div>
+    <h3>
+        <a href="#">Sandwizza Menu</a>
+    </h3>
+    <div>
+        Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
+        <ej-accordion id="sandMenu" style="width: 460px; margin-top: 15px">
+            <h3>
+                <a href="#">GARDEN VEGGIE (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/garden-veggie.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $30
+                    <br />
+                    Ingredients : onions, garden-veggies & tomatoes.
+                </div>
+            </div>
+            <h3>
+                <a href="#">PANEER TIKKA (Veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/paneer-tikka.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $34
+                    <br />
+                    Ingredients : onions, paneer & tomatoes.
+                </div>
+            </div>
+            <h3>
+                <a href="#">CHICKEN TIKKA (Non-veg)</a>
+            </h3>
+            <div>
+                <img src="../../content/images/accordion/chicken-tikka.png" alt="garden-fresh" />
+                <div class="ingredients">
+                    Rate    : $64
+                    <br />
+                    Ingredients : onions, grilled chicken, chicken salami & tomatoes.
+                </div>
+            </div>
+        </ej-accordion>
+    </div>
+    </ej-accordion>
+
+    <ej-accordion id="hoverAccordion" events="mouseover" class="control_frame">
+      <h3>
+          <a href="#">ASP.NET</a>
+      </h3>
+      <div>
+          Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled, event-driven programming model that improves performance and enables the separation of application logic and user interface.
+      </div>
+      <h3>
+          <a href="#">ASP.NET MVC</a>
+      </h3>
+      <div>
+          The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentication.
+      </div>
+      <h3>
+          <a href="#">Javascript</a>
+      </h3>
+      <div>
+          JavaScript (JS) is an interpreted computer programming language.
+          It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.More recently, however, it has become common in both game development and the creation of desktop applications.
+      </div>
+  </ej-accordion>
+
+
+<ej-tab [(selectedItemIndex)]="selectIndex">
+  <ul>
+      <li><a href="#twitter">Twitter</a></li>
+      <li><a href="#facebook">Facebook</a></li>
+      <li><a href="#whatsapp">WhatsApp</a></li>
+  </ul>
+  <div id="twitter">
+      Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".
+      Registered users can read and post tweets, but those who are unregistered can only read them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San Francisco and has more than 25 offices around the world.
+      Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion search queries per day.
+  </div>
+  <div id="facebook">
+      Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
+  </div>
+  <div id="whatsapp">
+      WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+      As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
+      WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
+  </div>
+</ej-tab>
+
+
+<ej-tab id="closeTab" [showCloseButton]="true" style="width: 500px">
+  <ul>
+      <li><a href="#rome">Rome</a></li>
+      <li><a href="#paris">Paris</a></li>
+      <li><a href="#london">London</a></li>
+  </ul>
+  <div id="rome">
+      Rome is one of the world's most fascinating cities. The old adage that Rome was not built in a day — and that you won't see it in one or even in three — is true. For the intrepid traveler who can keep pace, here is a list of must-sees. But remember what the Romans say: "Even a lifetime isn't enough to see Rome."
+  </div>
+  <div id="paris">
+      Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower. Even if you do not want to visit this world famous structure, you will see its top from all over Paris. The tower rises 300 meters tall (984 ft); when it was completed at the end of the nineteenth century
+  </div>
+  <div id="london">
+      London is one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has an excellent public transportation system that allows visitors to see all the fantastic sights without spending a ton of money on a rental car.London contains four World Heritage Sites: the Tower of London; Kew Gardens; the site comprising the Palace of Westminster, Westminster Abbey, and St Margaret's Church
+  </div>
+</ej-tab>
+
+
+<ej-tab id="iconTab" style="width: 500px">
+  <ul>
+      <li><a href="#India">India</a><span class="flagsimage sprite-India"></span></li>
+      <li><a href="#Australia">Australia</a><span class="flagsimage sprite-Australia"></span></li>
+      <li><a href="#USA">United States</a><span class="flagsimage sprite-USA"></span></li>
+      <li><a href="#France">France</a><span class="flagsimage sprite-France"></span></li>
+  </ul>
+  <div id="India">
+      India officially the Republic of India (Bharat Ganrajya), is a country in South Asia. It is the seventh-largest country by area, the second-most populous country with over 1.2 billion people, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;China, Nepal, and Bhutan to the north-east; and Burma and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India's Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.
+  </div>
+  <div id="Australia">
+      Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands. It is the world's sixth-largest country by total area. Neighboring countries include Indonesia, East Timor and Papua New Guinea to the north; the Solomon Islands, Vanuatu and New Caledonia to the north-east; and New Zealand to the south-east.
+  </div>
+  <div id="USA">
+      The United States of America (USA or U.S.A.), commonly called the United States (US or U.S.) and America, is a federal republic consisting of fifty states and a federal district. The 48 contiguous states and the federal district of Washington, D.C. are in central North America between Canada and Mexico. The state of Alaska is west of Canada and east of Russia across the Bering Strait, and the state of Hawaii is in the mid-North Pacific. The country also has five populated and nine unpopulated territories in the Pacific and the Caribbean.
+  </div>
+  <div id="France">
+      France, officially the French Republic is a sovereign state comprising territory in western Europe and several overseas regions and territories. The European part of France, called Metropolitan France, extends from the Mediterranean Sea to the English Channel and the North Sea, and from the Rhine to the Atlantic Ocean; France covers 640,679 square kilometres and as of August 2015 has a population of 67 million, counting all the overseas departments and territories .
+  </div>
+</ej-tab>
+
+<div style="height:200px;width:500px; margin-left: 25%;">
+  <ej-tab id="directionTab" height="200" headerPosition="left">
+      <ul>
+          <li><a href="#rome">Rome</a></li>
+          <li><a href="#paris">Paris</a></li>
+          <li><a href="#london">London</a></li>
+      </ul>
+      <div id="rome">
+          Rome is one of the world's most fascinating cities. The old adage that Rome was not built in a day — and that you won't see it in one or even in three — is true. For the intrepid traveler who can keep pace, here is a list of must-sees. But remember what the Romans say: "Even a lifetime isn't enough to see Rome."
+      </div>
+      <div id="paris">
+          Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower. Even if you do not want to visit this world famous structure, you will see its top from all over Paris. The tower rises 300 meters tall (984 ft); when it was completed at the end of the nineteenth century.
+      </div>
+      <div id="london">
+          London is one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has an excellent public transportation system that allows visitors to see all the fantastic sights without spending a ton of money on a rental car.London contains four World Heritage Sites: the Tower of London; Kew Gardens; the site comprising the Palace of Westminster, Westminster Abbey, and St Margaret's Church.
+      </div>
+  </ej-tab>
+   </div>
+
+   <div style="width:600px; margin-left: 25%">
+    <ej-tab id="scrollTab" [enableTabScroll]="true" style='display: block'>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#cSharp">C Sharp(C#)</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#vb">VB.Net</a></li>
+            <li><a href="#xam">Xamarin</a></li>
+            <li><a href="#ASP">ASP.NET</a></li>
+            <li><a href="#MVC">ASP.NET MVC</a></li>
+            <li><a href="#JS">JavaScript</a></li>
+        </ul>
+        <div id="html">
+            HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology, used by most websites to create visually engaging web pages, user interfaces for web applications, and user interfaces for many mobile applications.[1] Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.
+        </div>
+        <div id="cSharp">
+            C# is intended to be a simple, modern, general-purpose, object-oriented programming language.
+            Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.
+        </div>
+        <div id="java">
+            Java is a set of computer software and specifications developed by Sun Microsystems, later acquired by Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment. Java is used in a wide variety of computing platforms from embedded devices and mobile phones to enterprise servers and supercomputers. While less common, Java applets run in secure, sandboxed environments to provide many features of native applications and can be embedded in HTML pages.
+        </div>
+        <div id="vb">
+            The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK.
+            Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.
+        </div>
+        <div id="xam">
+            Xamarin is a San Francisco, California based software company created in May 2011[3] by the engineers that created Mono,[4] Mono for Android and MonoTouch that are cross-platform implementations of the Common Language Infrastructure (CLI) and Common Language Specifications (often called Microsoft .NET).
+            With a C#-shared codebase, developers can use Xamarin tools to write native Android, iOS, and Windows apps with native user interfaces and share code across multiple platforms.[5] Xamarin has over 1 million developers in more than 120 countries around the World as of May 2015.
+        </div>
+        <div id="ASP">
+            ASP.NET is an open-source server-side web application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, web applications and web services.
+            It was first released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is built on the Common Language Runtime (CLR), allowing programmers to write ASP.NET code using any supported .NET language. The ASP.NET SOAP extension framework allows ASP.NET components to process SOAP messages.
+        </div>
+        <div id="MVC">
+            The ASP.NET MVC is a web application framework developed by Microsoft, which implements the model–view–controller (MVC) pattern. It is open-source software, apart from the ASP.NET Web Forms component which is proprietary.
+            In the later versions of ASP.NET, ASP.NET MVC, ASP.NET Web API, and ASP.NET Web Pages (a platform using only Razor pages) will merge into a unified MVC 6.The project is called ASP.NET vNext.
+        </div>
+        <div id="JS">
+            JavaScript (JS) is an interpreted computer programming language.
+            It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser,
+            communicate asynchronously, and alter the document content that was displayed.[5] More recently, however,
+            it has become common in both game development and the creation of desktop applications.
+        </div>
+    </ej-tab>
+    </div>
+
+
+    <div style="width: 300px; margin-bottom: 20px;">
+      <h3>Select a single city</h3>
+      <ng-select [allowClear]="true"
+                  [items]="items"
+                  [disabled]="disabled"
+                  (data)="refreshValue($event)"
+                  (selected)="selected($event)"
+                  (removed)="removed($event)"
+                  (typed)="typed($event)"
+                  placeholder="No city selected">
+      </ng-select>
+      <p></p>
+      <pre>{{value.text}}</pre>
+     <!-- <div>
+        <button type="button" class="btn btn-primary"
+                [(ngModel)]="disabledV" btnCheckbox
+                btnCheckboxTrue="1" btnCheckboxFalse="0">
+          {{disabled === '1' ? 'Enable' : 'Disable'}}
+        </button>
+      </div> -->
+    </div>
+  
